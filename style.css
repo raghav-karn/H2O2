@@ -415,3 +415,7 @@ textarea:invalid {
   right: 0.5rem;
   height: 2rem;
 }
+/* footer */
+footer {
+  padding-block: 3rem 1rem;
+}
