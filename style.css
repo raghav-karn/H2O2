@@ -135,3 +135,8 @@ a {
 img {
   width: 100%;
 }
+.container > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
