@@ -419,3 +419,13 @@ textarea:invalid {
 footer {
   padding-block: 3rem 1rem;
 }
+
+/* circle */
+#circle {
+  position: absolute;
+  top: 0.8rem;
+  left: 32rem;
+  z-index: -10;
+  pointer-events: none;
+  width: 650px;
+}
