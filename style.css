@@ -236,3 +236,34 @@ dialog .close .btn {
 .dialog-message {
   border: 5px solid #1f2020;
 }
+.form-container {
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea {
+  background-color: #f9f6ef;
+  border: 3px solid #25282a;
+  font-size: 1.3rem;
+  padding: 0.3rem 0.5rem;
+  position: relative;
+  width: 100%;
+}
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="tel"]:invalid,
+input[type="url"]:invalid,
+textarea:invalid {
+  border-color: #a5282c;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid,
+input[type="url"]:valid,
+textarea:invalid {
+  border-color: #aee1cd;
+}
