@@ -299,3 +299,44 @@ textarea:invalid {
   grid-column: span 6;
 }
 /* table end */
+
+.sctn-hero {
+  position: relative;
+  min-height: 60vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5em 0;
+}
+.hero-msg-primary {
+  font-size: clamp(2rem, 5vw + 2rem, 7rem);
+  line-height: 1;
+  font-weight: 900;
+  inline-size: min(140%, calc(100vw - 2rem));
+  overflow-wrap: break-word;
+  hyphens: manual;
+  position: relative;
+}
+
+.hero-msg-tag {
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+}
+.hero-flaire {
+  position: absolute;
+  inset: 0 auto;
+  right: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center right;
+  filter: drop-shadow(-2px 5px 0px #5eb0e5);
+}
+
+.hero-flaire svg {
+  width: min(60%, calc(40vw + 50px));
+  opacity: 0.9;
+  transform: scaleX(-1);
+}
+.hero-actions {
+  padding-top: 5em;
+}
