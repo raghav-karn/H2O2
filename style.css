@@ -596,3 +596,112 @@ font-size: 1rem;
   font-size: 1rem;
   animation: color-change 10s ease-in-out infinite alternate;
 }
+
+/* snow */
+.snow-ball-container .snow-ball {
+  position: absolute;
+  border-radius: 0%;
+  background: white;
+  z-index: 100;
+}
+
+.snow-ball-container .snow-ball:nth-child(even) {
+  width: 16px;
+  height: 16px;
+  animation: flake-motion 12s linear infinite;
+}
+
+.snow-ball-container .snow-ball:nth-child(1) {
+  top: -50%;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+  animation: snowball-animation 12s linear 2s infinite;
+}
+
+.snow-ball-container .snow-ball:nth-child(2) {
+  top: -20%;
+  left: 10%;
+}
+
+.snow-ball-container .snow-ball:nth-child(3) {
+  top: -50%;
+  left: 15%;
+  animation: snowball-animation 12s linear infinite;
+}
+
+.snow-ball-container .snow-ball:nth-child(4) {
+  top: -10%;
+  left: 20%;
+}
+
+.snow-ball-container .snow-ball:nth-child(5) {
+  top: -20%;
+  left: 25%;
+  width: 20px;
+  height: 20px;
+  animation: snowball-animation 12s linear 2s infinite;
+}
+
+.snow-ball-container .snow-ball:nth-child(6) {
+  top: -40%;
+  left: 30%;
+}
+
+.snow-ball-container .snow-ball:nth-child(7) {
+  top: -30%;
+  left: 35%;
+  width: 5px;
+  height: 5px;
+  animation: snowball-animation 12s linear infinite;
+}
+
+.snow-ball-container .snow-ball:nth-child(8) {
+  top: -20%;
+  left: 40%;
+}
+
+.snow-ball-container .snow-ball:nth-child(9) {
+  top: -50%;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  animation: snowball-animation 12s linear 2s infinite;
+}
+
+.snow-ball-container .snow-ball:nth-child(10) {
+  top: -5%;
+  left: 50%;
+}
+
+.snow-ball-container .snow-ball:nth-child(11) {
+  top: -20%;
+  left: 60%;
+  animation: snowball-animation 12s linear infinite;
+}
+
+.snow-ball-container .snow-ball:nth-child(12) {
+  top: -10%;
+  left: 70%;
+}
+
+.snow-ball-container .snow-ball:nth-child(13) {
+  top: -50%;
+  left: 80%;
+  width: 5px;
+  height: 5px;
+  animation: snowball-animation 12s linear 2s infinite;
+}
+
+.snow-ball-container .snow-ball:nth-child(14) {
+  top: -20%;
+  left: 90%;
+}
+
+.snow-ball-container .snow-ball:nth-child(15) {
+  top: -50%;
+  left: 95%;
+  width: 30px;
+  height: 30px;
+  animation: snowball-animation 12s linear infinite;
+}
