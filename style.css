@@ -1,1 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700;900&display=swap");
+
+
+@keyframes line-anime {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+  }
+@keyframes color-change {
+    0% {
+      color: #1f2020;
+    }
+    20% {
+      color: #25282a;
+    }
+    40% {
+      color: #a5282c;
+    }
+    60% {
+      color: #5eb0e5;
+    }
+    80% {
+      color: #ebebe3;
+    }
+    100% {
+      color: #f9f6ef;
+    }
+}
