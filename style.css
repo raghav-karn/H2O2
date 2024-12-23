@@ -45,3 +45,16 @@
 ::-moz-selection {
     background: #ffb7b7; /* cannot combine*/
 }
+
+html {
+    scroll-behavior: smooth;
+}
+body,
+.container,
+header,
+div.logo,
+nav,
+ul {
+    margin: 0;
+    /*-- annoying margin at top --- */
+}
