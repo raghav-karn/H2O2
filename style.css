@@ -19,7 +19,7 @@
     color: #25282a;
   }
   40% {
-    color: #a5282c;
+    color: #D72C1A;
   }
   60% {
     color: #5eb0e5;
@@ -38,7 +38,7 @@
 }
 :root {
   font-family: "Poppins", sans-serif;
-  color: #1f2020;
+  color: #140103;
 }
 ::selection {
   background: #ffb7b7;
@@ -64,7 +64,7 @@ ul {
 /* fundamentals again again */
 body {
   padding: 0;
-  background-color: #f3d060;
+  background-color: #009544;
 }
 .container {
   width: min(120ch, calc(100% - 2rem));
@@ -72,8 +72,8 @@ body {
 }
 /* spinner */
 .spinner {
-  background-color: #a5282c !important;
-  color: #a5282c !important;
+  background-color: #D72C1A !important;
+  color: #D72C1A !important;
 }
 .spinner:before {
   content: "";
@@ -132,7 +132,7 @@ body {
   background-color: #aee1cd;
 }
 .btn-del {
-  background-color: #a5282c;
+  background-color: #D72C1A;
   color: #f9f6ef;
 }
 /* links */
@@ -155,7 +155,7 @@ img {
 }
 /* HO */
 .ho {
-  color: white;
+  color: #E9E7E7;
 }
 /* logo */
 .logo {
@@ -178,9 +178,13 @@ img {
   -webkit-text-stroke: 1px #1f2020;
 }
 .logo:first-letter {
-  color: #a5282c;
+  color: #D72C1A;
 }
 /* header navbar */
+.header {
+  z-index: 150;
+}
+
 nav ul {
   padding: 0;
   list-style: none;
@@ -195,7 +199,7 @@ nav ul li a {
   display: inline-block;
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  text-decoration-color: #a5282c;
+  text-decoration-color: #D72C1A;
   text-underline-offset: 2px;
   color: #1f2020;
   font-size: 1rem;
@@ -246,7 +250,7 @@ dialog .close .btn {
   position: absolute;
   box-shadow: 2px 2px 0px #25282a;
   overflow: hidden;
-  background-color: #a5282c;
+  background-color: #D72C1A;
   color: #f9f6ef;
   padding: 0;
 }
@@ -278,7 +282,7 @@ input[type="email"]:invalid,
 input[type="tel"]:invalid,
 input[type="url"]:invalid,
 textarea:invalid {
-  border-color: #a5282c;
+  border-color: #D72C1A;
 }
 
 input[type="text"]:valid,
@@ -331,6 +335,7 @@ textarea:invalid {
 }
 .hero-msg-primary {
   font-size: clamp(2rem, 5vw + 2rem, 7rem);
+  color: #D72C1A;
   line-height: 1;
   font-weight: 900;
   inline-size: min(140%, calc(100vw - 2rem));
@@ -385,7 +390,7 @@ textarea:invalid {
 
 .showcase-card header {
   border-bottom: 2px solid #25282a;
-  background-color: #a5282c;
+  background-color: #D72C1A;
   color: #f9f6ef;
   padding: 0.3rem 0.5rem;
   font-size: 0.65rem;
@@ -429,7 +434,6 @@ ul {
 }
 
 .footer {
-  background-color: #f3d060;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -597,13 +601,15 @@ font-size: 1rem;
   animation: color-change 10s ease-in-out infinite alternate;
 }
 
+/* snow */
 #snow-container {  
   height: 100vh;
   overflow: hidden;
   position: absolute;
-  top: 0;
   transition: opacity 500ms;
   width: 100%;
+  z-index: 0;
+  margin-top: 2rem;
 }
 
 .snow {
