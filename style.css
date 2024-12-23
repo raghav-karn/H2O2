@@ -162,3 +162,22 @@ img {
 .logo:first-letter {
   color: #a5282c;
 }
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+}
+nav ul li {
+  text-align: center;
+}
+nav ul li a {
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #a5282c;
+  text-underline-offset: 2px;
+  color: #1f2020;
+  font-size: 1rem;
+}
