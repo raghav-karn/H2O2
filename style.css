@@ -58,3 +58,12 @@ ul {
     margin: 0;
     /*-- annoying margin at top --- */
 }
+
+body {
+    padding: 0;
+    background-color: #f3d060;
+}
+.container {
+    width: min(120ch, calc(100% - 2rem));
+    margin: 0 auto;
+}  
