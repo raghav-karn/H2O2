@@ -267,3 +267,12 @@ input[type="url"]:valid,
 textarea:invalid {
   border-color: #aee1cd;
 }
+
+.rt-algn {
+  display: flex;
+  justify-content: end;
+}
+
+.fnt-sml {
+  font-size: 0.9rem;
+}
