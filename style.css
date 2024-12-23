@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700;900&display=swap");
 
+/* keyframes */
 @keyframes line-anime {
   to {
     stroke-dashoffset: 0;
@@ -30,7 +31,8 @@
     color: #f9f6ef;
   }
 }
-
+ 
+/* fundamentals */
 * {
   box-sizing: border-box;
 }
@@ -45,6 +47,7 @@
   background: #ffb7b7; /* cannot combine*/
 }
 
+/* fundamentals again */
 html {
   scroll-behavior: smooth;
 }
@@ -58,6 +61,7 @@ ul {
   /*-- annoying margin at top --- */
 }
 
+/* fundamentals again again */
 body {
   padding: 0;
   background-color: #f3d060;
@@ -66,6 +70,7 @@ body {
   width: min(120ch, calc(100% - 2rem));
   margin: 0 auto;
 }
+/* spinner */
 .spinner {
   background-color: #a5282c !important;
   color: #a5282c !important;
@@ -86,6 +91,7 @@ body {
   transform-origin: center center;
   animation: spinner 1s linear infinite;
 }
+/* button */
 .btn {
   position: relative;
   border: 2px solid #1f2020;
@@ -129,17 +135,21 @@ body {
   background-color: #a5282c;
   color: #f9f6ef;
 }
+/* links */
 a {
   cursor: pointer;
 }
+/* images */
 img {
   width: 100%;
 }
+/* container */
 .container > header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+/* logo */
 .logo {
   padding: 0.5rem;
   font-weight: 900;
@@ -162,6 +172,7 @@ img {
 .logo:first-letter {
   color: #a5282c;
 }
+/* header navbar */
 nav ul {
   padding: 0;
   list-style: none;
@@ -181,6 +192,7 @@ nav ul li a {
   color: #1f2020;
   font-size: 1rem;
 }
+/* dialog box */
 dialog {
   transition: 300ms ease-in-out, clip-path 0.5s linear;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -236,6 +248,7 @@ dialog .close .btn {
 .dialog-message {
   border: 5px solid #1f2020;
 }
+/* contact form */
 .form-container {
   padding-block: 1rem;
   padding-inline: 2rem;
@@ -277,7 +290,7 @@ textarea:invalid {
   font-size: 0.9rem;
 }
 
-/*  table */
+/* table */
 .row {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -298,8 +311,8 @@ textarea:invalid {
 .cell-6 {
   grid-column: span 6;
 }
-/* table end */
 
+/* hero section */
 .sctn-hero {
   position: relative;
   min-height: 60vh;
