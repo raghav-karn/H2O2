@@ -31,3 +31,17 @@
       color: #f9f6ef;
     }
 }
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    font-family: "Poppins", sans-serif;
+    color: #1f2020;
+}
+::selection {
+    background: #ffb7b7;
+}
+::-moz-selection {
+    background: #ffb7b7; /* cannot combine*/
+}
