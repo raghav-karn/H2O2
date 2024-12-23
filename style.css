@@ -429,3 +429,37 @@ footer {
   pointer-events: none;
   width: 650px;
 }
+
+/* designing holidays section */
+.sctn-designing-holidays {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  border: 3px solid #25282a;
+}
+
+.sctn-designing-holidays h2 {
+  margin: 0;
+  background-color: #5eb0e5;
+  padding: 1rem;
+  border-bottom: 2px solid #25282a;
+}
+
+.sctn-designing-holidays .content {
+  padding: 1rem;
+  margin: 0;
+  background-color: #ebebe3;
+}
+.sctn-designing-holidays p {
+  margin: 0;
+}
+.sctn-designing-holidays p ~ p {
+  margin-top: 1rem;
+}
+.sctn-designing-holidays ul {
+  background-color: #aee1cd;
+}
+.sctn-designing-holidays li::marker {
+  content: "\25BA  ";
+  font-size: 1rem;
+  animation: color-change 10s ease-in-out infinite alternate;
+}
