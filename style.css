@@ -140,3 +140,25 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+.logo {
+  padding: 0.5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: -0.15em;
+  color: transparent;
+  background-color: #f3d060;
+  background-size: 2px 2px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #1f2020 0,
+    #1f2020 0.5px,
+    #f3d060 0,
+    #f3d060 50%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 1px #1f2020;
+}
+.logo:first-letter {
+  color: #a5282c;
+}
