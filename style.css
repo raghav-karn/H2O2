@@ -138,16 +138,24 @@ body {
 /* links */
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 /* images */
 img {
   width: 100%;
+}
+.logo-img {
+  width: 35%;
 }
 /* container */
 .container > header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+/* HO */
+.ho {
+  color: white;
 }
 /* logo */
 .logo {
@@ -416,8 +424,97 @@ textarea:invalid {
   height: 2rem;
 }
 /* footer */
-footer {
-  padding-block: 3rem 1rem;
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #f3d060;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-container {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  row-gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 10rem;
+  padding-right: 3rem;
+}
+
+.footer-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #000000;
+  padding-left: 2.3rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+}
+
+.footer-link {
+  color: #292929;
+}
+
+.footer-link:hover {
+  color: #272727;
+}
+
+.footer-form {
+  display: flex;
+  column-gap: .5rem;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+}
+
+.footer-input {
+  background-color: #8d8455;
+  width: 90%;
+  color: #8d8d67;
+}
+
+.footer-input::placeholder {
+color: #e4e496;
+font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-social {
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  color: #4e4e4e;
+  background-color: #bdbd73;
+  padding: .5rem;
+  border-radius: .25rem;
+  font-size: 1rem;
+}
+
+.footer-social-link:hover {
+  background-color: #8d8455;
+}
+
+.footer-copy {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer-copy-link {
+  font-size: 0.813rem;
+  color: #bbbb95;
 }
 
 /* designing holidays section */
