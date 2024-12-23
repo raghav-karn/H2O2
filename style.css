@@ -129,3 +129,9 @@ body {
   background-color: #a5282c;
   color: #f9f6ef;
 }
+a {
+  cursor: pointer;
+}
+img {
+  width: 100%;
+}
