@@ -181,3 +181,58 @@ nav ul li a {
   color: #1f2020;
   font-size: 1rem;
 }
+dialog {
+  transition: 300ms ease-in-out, clip-path 0.5s linear;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transform: scale(0);
+  min-width: min(50vw, 80ch);
+  padding: 0;
+  box-shadow: 2.5px 2.5px 0px #25282a, 5px 5px 0px #25282a,
+    7.5px 7.5px 0px #25282a, 10px 10px 0px #25282a, 12.5px 12.5px 0px #25282a,
+    15px 15px 0px #25282a;
+}
+dialog::backdrop {
+  opacity: 0.7;
+  background-color: #f3d060;
+  background-size: 100%, 50px 50px;
+  background-image: radial-gradient(
+      circle at bottom right,
+      #f3c050c0 0%,
+      #f3d060c0 50%
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #1f2020 0,
+      #1f2020 1.5px,
+      #f3d060 0,
+      #f3d060 50%
+    );
+}
+dialog header {
+  border-bottom: 3px solid;
+  padding-inline: 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  position: relative;
+  background-color: #25282a;
+  color: #f9f6ef;
+}
+dialog .close .btn {
+  border-radius: 50%;
+  top: 5px;
+  right: 10px;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  box-shadow: 2px 2px 0px #25282a;
+  overflow: hidden;
+  background-color: #a5282c;
+  color: #f9f6ef;
+  padding: 0;
+}
+#confirm-dialog {
+  background-color: #ebebe3;
+}
+.dialog-message {
+  border: 5px solid #1f2020;
+}
