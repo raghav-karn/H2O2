@@ -66,4 +66,26 @@ body {
 .container {
     width: min(120ch, calc(100% - 2rem));
     margin: 0 auto;
-}  
+}
+
+.spinner {
+    background-color: #a5282c !important;
+    color: #a5282c !important;
+}
+.spinner:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    border-radius: 50%;
+    border: 4px solid #25282a;
+    border-top-color: #f3d060;
+    transform-origin: center center;
+    animation: spinner 1s linear infinite;
+}
+  
