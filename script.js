@@ -1,4 +1,6 @@
 const contactDialog = document.getElementById("confirm-dialog");
+const contactSparklingWater = document.getElementById("confirm-sparklingwater");
+const contactHolidays = document.getElementById("confirm-holidays");
 const sendButton = document.getElementById("send-message");
 
 contactDialog.addEventListener("click", function (event) {
@@ -28,6 +30,65 @@ function closeContactForm() {
   sendButton.classList.remove("spinner");
   sendButton.classList.add("hover-effect");
 }
+ 
+/* Sparkling water dialog box */
+contactSparklingWater.addEventListener("click", function (event) {
+  if (event.target !== contactSparklingWater) {
+    return;
+  }
+  console.log(event.target.tagName);
+  if (
+    event.offsetX < 0 ||
+    event.offsetX > event.target.offsetWidth ||
+    event.offsetY < 0 ||
+    event.offsetY > event.target.offsetHeight
+  ) {
+    closeSparklingWater();
+  }
+});
+
+function showSparklingWater() {
+  contactSparklingWater.style.clipPath = "unset";
+  contactSparklingWater.showModal();
+  contactSparklingWater.style.transform = "scale(1)";
+}
+function closeSparklingWater() {
+  contactSparklingWater.style.clipPath = "unset";
+  contactSparklingWater.style.transform = "scale(0)";
+  contactSparklingWater.close();
+  sendButton.classList.remove("spinner");
+  sendButton.classList.add("hover-effect");
+}
+
+/* Holidays dialog box */
+contactHolidays.addEventListener("click", function (event) {
+  if (event.target !== contactHolidays) {
+    return;
+  }
+  console.log(event.target.tagName);
+  if (
+    event.offsetX < 0 ||
+    event.offsetX > event.target.offsetWidth ||
+    event.offsetY < 0 ||
+    event.offsetY > event.target.offsetHeight
+  ) {
+    closeHolidays();
+  }
+});
+
+function showHolidays() {
+  contactHolidays.style.clipPath = "unset";
+  contactHolidays.showModal();
+  contactHolidays.style.transform = "scale(1)";
+}
+function closeHolidays() {
+  contactHolidays.style.clipPath = "unset";
+  contactHolidays.style.transform = "scale(0)";
+  contactHolidays.close();
+  sendButton.classList.remove("spinner");
+  sendButton.classList.add("hover-effect");
+}
+
 function showShowcase() {
   location.hash = "#portfolio";
   document.getElementById("portfolio").scrollIntoView();

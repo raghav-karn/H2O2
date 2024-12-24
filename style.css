@@ -217,7 +217,7 @@ dialog {
 }
 dialog::backdrop {
   opacity: 0.7;
-  background-color: #f3d060;
+  background-color: #13b852;
   background-size: 100%, 50px 50px;
   background-image: radial-gradient(
       circle at bottom right,
@@ -238,7 +238,7 @@ dialog header {
   display: grid;
   grid-template-columns: 1fr auto;
   position: relative;
-  background-color: #25282a;
+  background-color: #4a738f;
   color: #f9f6ef;
 }
 dialog .close .btn {
