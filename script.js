@@ -170,3 +170,9 @@ window.addEventListener("click", () => {
   removeSnow()
 });
 
+function playAudio() {
+  var audio = document.getElementById('background-music');
+  audio.play();
+}
+
+window.onload = playAudio;
